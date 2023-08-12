@@ -10,4 +10,6 @@
 #  updated_at :datetime         not null
 #
 class Answer < ApplicationRecord
+    def checkingAnswers
+    end
 end
