@@ -1,7 +1,9 @@
-%h1 入力画面
-= form_with(model: @answer, url: output_path, method: 'get', local: true) do |f|
-  %div
-    = f.label :input, '商品名'
-  %div
-    = f.text_field :input
-  = f.submit '送信', class: 'btn-primary'
+.container
+  %h2.message_top 人気TOP10を当てよう！
+  %h3.message_sub ランクイン予想のメニュー名を入力してください
+  = form_with(model: @answer, url: output_path, method: 'get', local: true) do |f|
+    %div
+      = f.label :input, 'メニュー名'
+    %div
+      = f.text_field :input, class: 'text'
+    = f.submit '決定', class: 'btn-primary'
