@@ -10,6 +10,5 @@
 #  updated_at :datetime         not null
 #
 class Answer < ApplicationRecord
-    def checkingAnswers
-    end
+    validates :name, presence: true
 end
